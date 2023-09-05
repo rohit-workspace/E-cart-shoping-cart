@@ -3,8 +3,8 @@ import { ShopContext } from "../../context/shop-context";
 import { PRODUCTS } from "../../products";
 import { CartItem } from "./Cart-item";
 import { useNavigate } from "react-router-dom";
-
 import "./cart.css";
+
 export const Cart = () => {
   const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
@@ -31,7 +31,7 @@ export const Cart = () => {
           <button
             onClick={() => {
               checkout();
-              navigate("/checkout");
+              navigate("/contact");
             }}
           >
             Checkout

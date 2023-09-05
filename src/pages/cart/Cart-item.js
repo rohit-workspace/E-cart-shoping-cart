@@ -5,11 +5,11 @@ export const CartItem = (props) => {
   const { id, productName, price, productImage } = props.data;
   const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
     useContext(ShopContext);
-
+console.log("props.data===>",props.data);
   return (
     <div className="cartItem">
       <img src={productImage} />
-      <div className="description">
+       <div className="description">
         <p>
           <b>{productName}</b>
         </p>
